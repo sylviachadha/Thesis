@@ -1,9 +1,5 @@
 #https://machinelearningmastery.com/lstm-autoencoders/
 
-# LSTM Autoencoder using LSTM Encoder-decoder architecture
-# Encoder will always encode
-# Decoder can reconstruction, prediction, or composite
-
 # lstm autoencoder predict sequence
 from numpy import array
 from keras.models import Sequential
@@ -18,6 +14,7 @@ seq_in = array([0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9])
 
 # reshape input into [samples, timesteps, features]
 n_in = len(seq_in)
+print(n_in)
 seq_in = seq_in.reshape((1, n_in, 1))
 print(seq_in)
 
