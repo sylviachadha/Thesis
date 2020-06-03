@@ -1,3 +1,7 @@
+# Anomaly Detection using LSTM Autoencoder - LSTM Encoder Decoder Architecture
+# Here Decoder is used as predictor?????
+# Mostly anomalies seem to be collective anomalies
+
 # Import libraries
 import pandas as pd
 import numpy as np
@@ -185,23 +189,4 @@ plt.show()
 anomalies = test_score_df[test_score_df.anomaly == True]
 print(anomalies)
 
-# plt.plot(
-#    test[TIME_STEPS:].index,
-#    scaler.inverse_transform(test[TIME_STEPS:].value),
-#    label='value'
-#  )
-# plt.show()
-#
-# sns.scatterplot(
-#    anomalies.index,
-#    scaler.inverse_transform(anomalies.value),
-#    color=sns.color_palette()[3],
-#    s=52,
-#    label='anomaly'
-#  )
-# plt.xticks(rotation=25)
-# plt.legend()
-# plt.show()
 
-
-# Command + / to comment all of them
